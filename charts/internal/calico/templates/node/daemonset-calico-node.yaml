@@ -412,6 +412,8 @@ spec:
             - name:  FELIX_VXLANENABLED
               value: "true"
             {{- end }}
+            - name: FELIX_WORKLOADSOURCESPOOFING
+              value: "{{ .Values.config.felix.workloadSourceSpoofing }}"
           securityContext:
             {{- if not .Values.config.nonPrivileged }}
             privileged: true

@@ -42,6 +42,7 @@ config:
       enabled: "false"
     bpfKubeProxyIPTablesCleanup:
       enabled: "false"
+    workloadSourceSpoofing: "any"
   nonPrivileged: false
   birdExporter:
     enabled: false
